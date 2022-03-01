@@ -15,7 +15,7 @@ plugins {
 }
 
 group = 'fr.raven.messaging'
-version = '0.1.0'
+version = '0.1.1'
 
 repositories {
     mavenCentral()
@@ -73,4 +73,10 @@ compileTestKotlin {
 
 jacoco {
     toolVersion = "0.8.7"
+}
+
+protobuf {
+  protoc {
+    artifact = 'com.google.protobuf:protoc:3.8.0'
+  }
 }
